@@ -22,11 +22,14 @@ h2 {
   font-size: 1.5em;
 }
 nav {
-  box-sizing: border-box;
   padding: 0.5em;
   display: block;
-  height: 80px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+  line-height: 1.5em;
 }
 nav h2 {
   font-size: 0.8em;
@@ -36,16 +39,16 @@ button {
 }
 #kitty_map {
   position: absolute;
-  top: 80px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .kitty-list {
   margin: 0;
   padding: 0;
+  display: inline;
 }
 .kitty-list .kitty {
+  vertical-align: middle;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -54,7 +57,7 @@ button {
   width: 24px;
   height: 24px;
   background-size:100%;
-  float: left;
+  display: inline-block;
   transition-property: -webkit-transform;
   transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(.5,3,.5,.5);
