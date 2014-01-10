@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MINEKITTY</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      document.write('<sc'+'ript type="text/javascript" src="'
+        + 'http://maps.googleapis.com/maps/api/js?key='
+        + window.googleAPIKey
+        + '&sensor=false"></s'+'cript>');
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      Find kitties. Double points for indoor kitties.
+      <button class="mine-kitty">MINE KITTY!</button>
+      <button class="save-progress">Save Progress</button>
+      <ul class="kitty-list">
+      </ul>
+    </nav>
+    <div id="kitty_map"></div>
+    <div class="kitty-reticule"></div>
+  </body>
+</html>
